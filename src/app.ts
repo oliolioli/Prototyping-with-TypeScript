@@ -14,9 +14,18 @@ export class App {
         this._router = router;
         config.map([
 
-            // route for dashboard
+            // route for login
             <ICustomRouteConfig>{
                 route: '',
+                moduleId: PLATFORM.moduleName('components/login/login'),
+                nav: true,
+                name: "login",
+                title: 'Login',
+            },
+
+            // route for dashboard
+            <ICustomRouteConfig>{
+                route: 'dashboard',
                 moduleId: PLATFORM.moduleName('components/dashboard/dashboard'),
                 nav: true,
                 name: "dashboard",
