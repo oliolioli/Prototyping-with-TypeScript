@@ -24,11 +24,18 @@
             <mdc-drawer-header title="${_router.title}" subtitle="${_subTitle}"></mdc-drawer-header>
             <mdc-drawer-content>
                 <mdc-list class="drawer-navigation-list">
+
+                    <!-- Dashboard -->
+                    <mdc-list-item click.delegate="navigateTo('dashboard')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Dashboard</h5>
+                        </span>
+                    </mdc-list-item>
+
                     <!-- My Studies -->
                     <mdc-list-item click.delegate="navigateTo('mystudies')" class="drawer-navigation-item">
                         <span class="drawer-navigation-item__content">
                             <h5 class="drawer-navigation-item__title">My Studies</h5>
-                            <p class="drawer-navigation-item__subtitle">Access the catalog of courses and request to be enrolled.</p>
                         </span>
                     </mdc-list-item>
         
@@ -36,7 +43,6 @@
                     <mdc-list-item click.delegate="navigateTo('roomreservation')" class="drawer-navigation-item">
                         <span class="drawer-navigation-item__content">
                             <h5 class="drawer-navigation-item__title">Room Reservation</h5>
-                            <p class="drawer-navigation-item__subtitle">Professors can access the facility manager to reserve a classroom.</p>
                         </span>
                     </mdc-list-item>
         
@@ -44,7 +50,6 @@
                     <mdc-list-item click.delegate="navigateTo('eat')" class="drawer-navigation-item">
                         <span class="drawer-navigation-item__content">
                             <h5 class="drawer-navigation-item__title">Eat</h5>
-                            <p class="drawer-navigation-item__subtitle">Weekly fresh menus.</p>
                         </span>
                     </mdc-list-item>
         
@@ -52,7 +57,6 @@
                     <mdc-list-item click.delegate="navigateTo('financialsupport')" class="drawer-navigation-item">
                         <span class="drawer-navigation-item__content">
                             <h5 class="drawer-navigation-item__title">Financial Support</h5>
-                            <p class="drawer-navigation-item__subtitle">Submit a financial support request.</p>
                         </span>
                     </mdc-list-item>
         
@@ -60,7 +64,6 @@
                     <mdc-list-item click.delegate="navigateTo('statistics')" class="drawer-navigation-item">
                         <span class="drawer-navigation-item__content">
                             <h5 class="drawer-navigation-item__title">Statistics</h5>
-                            <p class="drawer-navigation-item__subtitle">Request available statistics.</p>
                         </span>
                     </mdc-list-item>
         
@@ -68,7 +71,6 @@
                     <mdc-list-item click.delegate="navigateTo('announcement')" class="drawer-navigation-item">
                         <span class="drawer-navigation-item__content">
                             <h5 class="drawer-navigation-item__title">Announcement</h5>
-                            <p class="drawer-navigation-item__subtitle">Broadcast your message.</p>
                         </span>
                     </mdc-list-item>
                 </mdc-list>
