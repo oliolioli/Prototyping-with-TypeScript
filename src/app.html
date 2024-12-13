@@ -1,0 +1,57 @@
+<template>
+    <require from="./app.scss"></require>
+    <main>
+        <mdc-top-app-bar fixed style="z-index: 7">
+            <mdc-top-app-bar-row>
+                <mdc-top-app-bar-section start>
+                    <button click.delegate="_drawer.toggle()" mdc-ripple="unbounded.bind: true"
+                        class="mdc-top-app-bar__navigation-icon mdc-icon-button mdc-ripple-upgraded--unbounded mdc-ripple-upgraded drawer-toggle-button"
+                        role="button">
+                        <i class="material-icons">menu</i>
+                    </button>
+                    <mdc-top-app-bar-title>
+                        ${_router.title}
+                    </mdc-top-app-bar-title>
+                </mdc-top-app-bar-section>
+                <mdc-top-app-bar-section end>
+                    <a href="https://github.com/aurelia-mdc-web/new" title="Homepage" target="_blank"
+                        class="mdc-top-app-bar__action-item" rel="noopener" role="button" mdc-body2>1.0.0</a>
+                </mdc-top-app-bar-section>
+            </mdc-top-app-bar-row>
+        </mdc-top-app-bar>
+        
+        <mdc-drawer view-model.ref="_drawer" type="dismissible" mdc-top-app-bar-fixed-adjust>
+            <mdc-drawer-header title="${_router.title}" subtitle="${_subTitle}"></mdc-drawer-header>
+            <mdc-drawer-content>
+                <div class="section">
+                    <h5>My studies</h5>
+                    <p class="small-label-side">Access the catalog of courses and request to be enrolled.</p>
+                </div>
+                <div class="section">
+                    <h5>Room reservation</h5>
+                    <p class="small-label-side">Professors can access the facility manager to reserve a classroom</p>
+                </div>
+                <div class="section">
+                    <h5>Eat</h5>
+                    <p class="small-label-side">Weekly fresh menus</p>
+                </div>
+                <div class="section">
+                    <h5>Financial support</h5>
+                    <p class="small-label-side">Submit a financial support request</p>
+                </div>
+                <div class="section">
+                    <h5>Statistics</h5>
+                    <p class="small-label-side">Request available statistics</p>
+                </div>
+                <div class="section">
+                    <h5>Announcement</h5>
+                    <p class="small-label-side">Broadcast your message</p>
+                </div>
+            </mdc-drawer-content>
+        </mdc-drawer>
+
+        <mdc-drawer-app-content mdc-top-app-bar-fixed-adjust>
+            <router-view></router-view>
+        </mdc-drawer-app-content>
+    </main>
+</template>

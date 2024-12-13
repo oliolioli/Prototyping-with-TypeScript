@@ -1,0 +1,72 @@
+@import "./styles/mdc";
+
+body {
+    margin: 0;
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.drawer-toggle-button {
+    --mdc-ripple-fg-size:28px;
+    --mdc-ripple-fg-scale:1.71429;
+    --mdc-ripple-left:10px;
+    --mdc-ripple-top:10px;
+}
+
+.section {
+    padding: 1rem; /* Padding for spacing */
+    border-bottom: 1px solid #e0e0e0; /* Light border for separation */
+    transition: background-color 0.2s ease-in-out; /* Smooth hover effect */
+
+    &:hover {
+        background-color: #f9f9f9; /* Subtle hover background color */
+    }
+}
+
+
+h3 {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 28px;
+    line-height: 33px;
+    width: 376px;
+    text-align: center;
+}
+
+h5 {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 17px;
+    line-height: 33px;
+    width: 376px;
+    text-align: left;
+}
+
+
+.small-label {
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 30px;
+    width: 376px;
+    text-align: center;
+}
+
+.small-label-side {
+    font-size: 0.9rem; /* Label font size */
+    color: #666; /* Muted text color */
+    margin-top: 0.2rem;
+    text-align: left;
+}
+
+.selector {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 40px;
+    line-height: 50px;
+    width: 400px;
+    text-align: center;
+  }

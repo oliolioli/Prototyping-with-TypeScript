@@ -1,0 +1,111 @@
+<!--
+<template class="dashboard">
+    <require from="./dashboard.scss"></require>
+    <mdc-layout-grid mdc-body1 class="dashboard">
+        <mdc-layout-grid-inner>
+            <mdc-layout-grid-cell span="12">
+                <h3 mdc-headline3>Development: ${_config.developmentMode}</h3>
+            </mdc-layout-grid-cell>
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>One</mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>Two</mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>Three</mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+        </mdc-layout-grid-inner>
+    </mdc-layout-grid>
+</template>
+-->
+
+<template class="dashboard">
+    <require from="./dashboard.scss"></require>
+    <mdc-layout-grid mdc-body1 class="dashboard">
+        <mdc-layout-grid-inner>
+            <!-- Header -->
+            <mdc-layout-grid-cell span="12">
+                <h3 mdc-headline3 selector>Development: ${_config.developmentMode}</h3>
+            </mdc-layout-grid-cell>
+            
+            <!-- Card 1 -->
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>
+                        <div class="section">
+                            <h3>My studies</h3>
+                            <p class="small-label">Access the catalog of courses and request to be enrolled.</p>
+                        </div>
+                    </mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+            <!-- Card 2 -->
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>
+                        <div class="section">
+                            <h3>Room reservation</h3>
+                            <p class="small-label">Professors can access the facility manager to reserve a classroom.</p>
+                        </div>
+                    </mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+            <!-- Card 3 -->
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>
+                        <div class="section">
+                            <h3>Eat</h3>
+                            <p class="small-label">Weekly fresh menus.</p>
+                        </div>
+                    </mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+            <!-- Card 4 -->
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>
+                        <div class="section">
+                            <h3>Financial support</h3>
+                            <p class="small-label">Submit a financial support request.</p>
+                        </div>
+                    </mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+            <!-- Card 5 -->
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>
+                        <div class="section">
+                            <h3>Statistics</h3>
+                            <p class="small-label">Request available statistics.</p>
+                        </div>
+                    </mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+            <!-- Card 6 -->
+            <mdc-layout-grid-cell span="4">
+                <mdc-card>
+                    <mdc-card-primary-action>
+                        <div class="section">
+                            <h3>Announcement</h3>
+                            <p class="small-label">Broadcast your message.</p>
+                        </div>
+                    </mdc-card-primary-action>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+        </mdc-layout-grid-inner>
+    </mdc-layout-grid>
+</template>

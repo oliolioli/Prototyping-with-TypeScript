@@ -1,0 +1,8 @@
+// Here are the main top bar coloring to be found and the like
+@use "@material/theme"with ($primary: #969FAA,
+    $secondary: #f6a821,
+    $on-primary: #ffffff,
+    $on-secondary: #ffffff,
+);
+
+@use "@aurelia-mdc-web/all";
