@@ -1,0 +1,20 @@
+<template>
+    <require from="@aurelia-mdc-web/text-field"></require>
+    <require from="@aurelia-mdc-web/button"></require>
+
+    <div class="login-container">
+        <div class="login-form">
+            <h2 class="login-title">Login</h2>
+            <form>
+                <mdc-text-field label="Email" type="email" value.bind="email" required></mdc-text-field>
+
+                
+                <mdc-text-field label="Password" type="password" value.bind="password" required></mdc-text-field>
+
+            
+                <mdc-button raised class="login-button" type="submit" click.delegate="login()">Login</mdc-button>
+            </form>
+        </div>
+    </div>
+</template>
+

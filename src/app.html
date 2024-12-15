@@ -23,30 +23,57 @@
         <mdc-drawer view-model.ref="_drawer" type="dismissible" mdc-top-app-bar-fixed-adjust>
             <mdc-drawer-header title="${_router.title}" subtitle="${_subTitle}"></mdc-drawer-header>
             <mdc-drawer-content>
-                <div class="section">
-                    <h5>My studies</h5>
-                    <p class="small-label-side">Access the catalog of courses and request to be enrolled.</p>
-                </div>
-                <div class="section">
-                    <h5>Room reservation</h5>
-                    <p class="small-label-side">Professors can access the facility manager to reserve a classroom</p>
-                </div>
-                <div class="section">
-                    <h5>Eat</h5>
-                    <p class="small-label-side">Weekly fresh menus</p>
-                </div>
-                <div class="section">
-                    <h5>Financial support</h5>
-                    <p class="small-label-side">Submit a financial support request</p>
-                </div>
-                <div class="section">
-                    <h5>Statistics</h5>
-                    <p class="small-label-side">Request available statistics</p>
-                </div>
-                <div class="section">
-                    <h5>Announcement</h5>
-                    <p class="small-label-side">Broadcast your message</p>
-                </div>
+                <mdc-list class="drawer-navigation-list">
+
+                    <!-- Dashboard -->
+                    <mdc-list-item click.delegate="navigateTo('dashboard')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Dashboard</h5>
+                        </span>
+                    </mdc-list-item>
+
+                    <!-- My Studies -->
+                    <mdc-list-item click.delegate="navigateTo('mystudies')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">My Studies</h5>
+                        </span>
+                    </mdc-list-item>
+        
+                    <!-- Room Reservation -->
+                    <mdc-list-item click.delegate="navigateTo('roomreservation')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Room Reservation</h5>
+                        </span>
+                    </mdc-list-item>
+        
+                    <!-- Eat -->
+                    <mdc-list-item click.delegate="navigateTo('eat')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Eat</h5>
+                        </span>
+                    </mdc-list-item>
+        
+                    <!-- Financial Support -->
+                    <mdc-list-item click.delegate="navigateTo('financialsupport')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Financial Support</h5>
+                        </span>
+                    </mdc-list-item>
+        
+                    <!-- Statistics -->
+                    <mdc-list-item click.delegate="navigateTo('statistics')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Statistics</h5>
+                        </span>
+                    </mdc-list-item>
+        
+                    <!-- Announcement -->
+                    <mdc-list-item click.delegate="navigateTo('announcement')" class="drawer-navigation-item">
+                        <span class="drawer-navigation-item__content">
+                            <h5 class="drawer-navigation-item__title">Announcement</h5>
+                        </span>
+                    </mdc-list-item>
+                </mdc-list>
             </mdc-drawer-content>
         </mdc-drawer>
 

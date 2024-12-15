@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@aurelia-mdc-web/all": "^8.0.2",
+    "@aurelia-mdc-web/text-field": "9.0.8",
     "aurelia-bootstrapper": "^2.3.3",
     "aurelia-templating": "^1.10.4"
   },
