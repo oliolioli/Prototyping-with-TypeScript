@@ -1,6 +1,11 @@
 # Readme
 
-This repository contains a Aurelia Material application with a drawer and one sub navigation item.
+# Main structure of project
+
+- Side drawer / menu: /src/components/app.html
+- The single components are then to be found under /src/components/<component-name>/<component-name.[html|scss|ts]>
+
+
 
 ![](./screenshot.png)
 

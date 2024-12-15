@@ -15,13 +15,13 @@
                 </mdc-top-app-bar-section>
                 <mdc-top-app-bar-section end>
                     <a href="https://github.com/aurelia-mdc-web/new" title="Homepage" target="_blank"
-                        class="mdc-top-app-bar__action-item" rel="noopener" role="button" mdc-body2>1.0.0</a>
+                        class="mdc-top-app-bar__action-item" rel="noopener" role="button" mdc-body2>${_subTitle}</a>
                 </mdc-top-app-bar-section>
             </mdc-top-app-bar-row>
         </mdc-top-app-bar>
         
         <mdc-drawer view-model.ref="_drawer" type="dismissible" mdc-top-app-bar-fixed-adjust>
-            <mdc-drawer-header title="${_router.title}" subtitle="${_subTitle}"></mdc-drawer-header>
+            <mdc-drawer-header title="Menu" subtitle="${_subTitle}"></mdc-drawer-header>
             <mdc-drawer-content>
                 <mdc-list class="drawer-navigation-list">
 
