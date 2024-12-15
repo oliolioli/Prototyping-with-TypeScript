@@ -1,5 +1,49 @@
 <template>
     <h1>Digital Science</h1>
-    <p>Here you can access the catalog of rooms and reserve them.</p>
-</template>
+    <p>Here you can access the catalog of courses and request to be enrolled.</p>
+  
+    <!-- Centered Box with Styled Table -->
+     <center>
+
+      <table class="courses">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th>ETCS</th>
+            <th>Select</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mathematics</td>
+            <td>SA2024</td>
+            <td>6</td>
+            <td><input type="checkbox" name="course"/></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Physics</td>
+            <td>SB2024</td>
+            <td>6</td>
+            <td><input type="checkbox" name="course" /></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Computer Science</td>
+            <td>SA2024</td>
+            <td>6</td>
+            <td><input type="checkbox" name="course" /></td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td></td><td></td><td></td><td></td>
+            <td><button class="enroll-button">Enroll</button></td>
+        </tr>
+        </tbody>
+      </table>
+    </center>
+  </template>
   

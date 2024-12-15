@@ -137,3 +137,38 @@ h5 {
     width: 400px;
     text-align: center;
   }
+  
+
+  .courses {
+    width: 70%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #47525E;
+    font-family: Lato;
+    font-size: 25px;
+    text-align: left;
+    border-color: #C0CCDA;
+    tr:nth-child(even){background-color: #EFF2F7}
+    padding: 20px;
+  }
+
+  th {
+    background-color: #969FAA;
+  }
+
+  
+  /* Enroll Button */
+  .enroll-button {
+    background-color: #47525E;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 20px;
+    line-height: 62px;
+    width: 108px;
+    text-align: center;
+    display: block;
+    margin-right: 20px;
+  }
+  
