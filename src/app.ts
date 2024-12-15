@@ -80,6 +80,51 @@ export class App {
                 title: 'Statistics',
             },
 
+            // route for social science etc.
+            <ICustomRouteConfig>{
+                route: 'digitalScience',
+                moduleId: PLATFORM.moduleName('components/mystudies/digitalScience/digitalScience'),
+                nav: true,
+                name: "digitalScience",
+                title: 'digitalScience',
+            },
+
+            // route for social science etc.
+            <ICustomRouteConfig>{
+                route: 'managementEconomicsSocialSciences',
+                moduleId: PLATFORM.moduleName('components/mystudies/managementEconomicsSocialSciences/managementEconomicsSocialSciences'),
+                nav: true,
+                name: "managementEconomicsSocialSciences",
+                title: 'managementEconomicsSocialSciences',
+            },
+
+            // route for social science etc.
+            <ICustomRouteConfig>{
+                route: 'humanities',
+                moduleId: PLATFORM.moduleName('components/mystudies/humanities/humanities'),
+                nav: true,
+                name: "humanities",
+                title: 'humanities',
+            },            
+            
+            // route for social science etc.
+            <ICustomRouteConfig>{
+                route: 'theology',
+                moduleId: PLATFORM.moduleName('components/mystudies/theology/theology'),
+                nav: true,
+                name: "theology",
+                title: 'theology',
+            },      
+
+            // route for social science etc.
+            <ICustomRouteConfig>{
+                route: 'scienceMedicine',
+                moduleId: PLATFORM.moduleName('components/mystudies/scienceMedicine/scienceMedicine'),
+                nav: true,
+                name: "scienceMedicine",
+                title: 'scienceMedicine',
+            },      
+
             // route for announcement
             <ICustomRouteConfig>{
                 route: 'announcement',

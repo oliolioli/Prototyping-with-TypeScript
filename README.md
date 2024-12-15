@@ -9,6 +9,9 @@
 
 Styles are to be set (centrally) under /src/app.scss
 
+## Routes
+
+Routes are to be found under: /src/app.ts
 
 ![](./screenshot.png)
 

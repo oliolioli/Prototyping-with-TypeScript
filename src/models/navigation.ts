@@ -5,3 +5,4 @@ export interface ICustomRouteConfig extends RouteConfig {
         count?: number,
     }
 }
+
