@@ -1,5 +1,48 @@
 <template>
     <h1>Financial Support</h1>
-    <p>Here you can request a financial support.</p>
+
+    <!-- Gray box with a welcome message -->
+    <div style="background-color: #969FAA; margin: auto; width: 70%; color: white; padding: 1rem; border-radius: 4px; margin-top: 1rem; text-align: center;">
+        <p style="color:#47525E">Submit a financial support request. Please fill in the form below to submit your details.</p>
+    </div>
+
+    <!-- Form section -->
+    <div style="margin: auto; width: 70%; margin-top: 2rem;">
+        <form>
+            <!-- First Name -->
+            <div style="margin-bottom: 1rem;">
+                <label for="first-name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">First Name</label>
+                <input type="text" id="first-name" name="first-name" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required>
+            </div>
+
+            <!-- Last Name -->
+            <div style="margin-bottom: 1rem;">
+                <label for="last-name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Last Name</label>
+                <input type="text" id="last-name" name="last-name" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required>
+            </div>
+
+            <!-- Matriculation Number -->
+            <div style="margin-bottom: 1rem;">
+                <label for="matriculation-number" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Matriculation Number</label>
+                <input type="text" id="matriculation-number" name="matriculation-number" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required>
+            </div>
+
+            <!-- Prosa -->
+            <div style="margin-bottom: 1rem;">
+                <label for="prosa" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Prosa</label>
+                <textarea id="prosa" name="prosa" rows="5" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;" required></textarea>
+            </div>
+
+            <!-- Upload PDF -->
+            <div style="margin-bottom: 1rem;">
+                <label for="pdf-upload" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Upload PDF</label>
+                <input type="file" id="pdf-upload" name="pdf-upload" accept="application/pdf" style="width: 100%; padding: 0.5rem; border: 1px solid #ccc; border-radius: 4px;">
+            </div>
+
+            <!-- Submit Button -->
+            <div style="text-align: center;">
+                <button type="submit" style="background-color: #969FAA; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer;">Submit</button>
+            </div>
+        </form>
+    </div>
 </template>
-  

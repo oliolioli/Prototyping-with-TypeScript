@@ -60,7 +60,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/eat/eat'),
                 nav: true,
                 name: "eat",
-                title: 'Eat',
+                title: 'Eat Weekly Fresh Menus',
             },
 
             // route for financial support
@@ -78,7 +78,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/statistics/statistics'),
                 nav: true,
                 name: "statistics",
-                title: 'Statistics',
+                title: 'Statistics Courses',
             },
 
             // route for social science etc.
@@ -87,7 +87,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/mystudies/digitalScience/digitalScience'),
                 nav: true,
                 name: "digitalScience",
-                title: 'digitalScience',
+                title: 'Digital Science Courses',
             },
 
             // route for social science etc.
@@ -96,7 +96,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/mystudies/managementEconomicsSocialSciences/managementEconomicsSocialSciences'),
                 nav: true,
                 name: "managementEconomicsSocialSciences",
-                title: 'managementEconomicsSocialSciences',
+                title: 'Management, Economics and Social Sciences Courses',
             },
 
             // route for social science etc.
@@ -105,7 +105,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/mystudies/humanities/humanities'),
                 nav: true,
                 name: "humanities",
-                title: 'humanities',
+                title: 'Humanities Courses',
             },            
             
             // route for social science etc.
@@ -114,7 +114,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/mystudies/theology/theology'),
                 nav: true,
                 name: "theology",
-                title: 'theology',
+                title: 'Theology Courses',
             },      
 
             // route for social science etc.
@@ -123,7 +123,7 @@ export class App {
                 moduleId: PLATFORM.moduleName('components/mystudies/scienceMedicine/scienceMedicine'),
                 nav: true,
                 name: "scienceMedicine",
-                title: 'scienceMedicine',
+                title: 'Science and Medicine Courses',
             },   
 
             // route for course enrollment
