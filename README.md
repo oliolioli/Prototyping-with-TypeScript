@@ -25,12 +25,6 @@ Routes are to be found under: **/src/app.ts**
 npm start
 ```
 
-### Build release
-* Injects the `services/config-prod.ts` config
-* Generates the application into `dist`
-```bash
-npm run build
-```
 
 ## Utils
 
@@ -40,13 +34,6 @@ Generates visualization of package sizes
 npm run analyze
 ```
 
-### Update aurelia-mdc
-
-```shell
-npm install -g npm-check-updates
-ncu -u "/aurelia-mdc-web/"
-npm install
-```
 
 ## References
 
