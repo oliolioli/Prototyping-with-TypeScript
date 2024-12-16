@@ -8,6 +8,7 @@
       <div class="login-box">
         <div class="login-form">
           <h2 class="login-title"><center>Sign in</center></h2>
+          <!-- Login Form -->
           <form>
             <mdc-text-field label="Email" type="email" value.bind="email" required></mdc-text-field>
             <mdc-text-field label="Password" type="password" value.bind="password" required></mdc-text-field><p/>
@@ -15,29 +16,35 @@
           </form>
         </div>
       </div>
-      <div class="radio-group">
-        <mdc-form-field>
-          <div class="mdc-radio">
-            <input class="mdc-radio__native-control" type="radio" id="staff" name="role" value="staff" checked.bind="selectedRole" />
-            <div class="mdc-radio__background">
-              <div class="mdc-radio__outer-circle"></div>
-              <div class="mdc-radio__inner-circle"></div>
+      <table>
+        <tr><td>
+          <!-- Radio buttons to choose roles -->
+          <mdc-form-field>
+            <div class="mdc-radio">
+              <input class="mdc-radio__native-control" type="radio" id="staff" name="role" value="staff" checked.bind="selectedRole" />
+              <div class="mdc-radio__background">
+                <div class="mdc-radio__outer-circle"></div>
+                <div class="mdc-radio__inner-circle"></div>
+              </div>
             </div>
-          </div>
-          <label for="staff">Staff</label>
-        </mdc-form-field>
-  
-        <mdc-form-field>
-          <div class="mdc-radio">
-            <input class="mdc-radio__native-control" type="radio" id="student" name="role" value="student" checked.bind="selectedRole" />
-            <div class="mdc-radio__background">
-              <div class="mdc-radio__outer-circle"></div>
-              <div class="mdc-radio__inner-circle"></div>
-            </div>
-          </div>
-          <label for="student">Student</label>
-        </mdc-form-field>
-  
+            <label for="staff">Staff</label>
+          </mdc-form-field>
+        </td></tr>
+
+        <tr><td>
+          <mdc-form-field>
+            <div class="mdc-radio">
+              <input class="mdc-radio__native-control" type="radio" id="student" name="role" value="student" checked.bind="selectedRole" />
+                <div class="mdc-radio__background">
+                  <div class="mdc-radio__outer-circle"></div>
+                  <div class="mdc-radio__inner-circle"></div>
+                </div>
+              </div>
+            <label for="student">Student</label>
+          </mdc-form-field>
+        </td></tr>
+
+        <tr><td>
         <mdc-form-field>
           <div class="mdc-radio">
             <input class="mdc-radio__native-control" type="radio" id="professor" name="role" value="professor" checked.bind="selectedRole" />
@@ -48,7 +55,9 @@
           </div>
           <label for="professor">Professor</label>
         </mdc-form-field>
-  
+        </td></tr>
+
+        <tr><td>
         <mdc-form-field>
           <div class="mdc-radio">
             <input class="mdc-radio__native-control" type="radio" id="external" name="role" value="external" checked.bind="selectedRole" />
@@ -59,6 +68,10 @@
           </div>
           <label for="external">External</label>
         </mdc-form-field>
+        </td></tr>
+
+      </table>
+      <div class="radio-group">
       </div>
     </div>
   </template>
