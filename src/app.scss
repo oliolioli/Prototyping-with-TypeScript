@@ -47,6 +47,13 @@ p {
   text-align: center;
 }
 
+.dashtitle {
+  color: #47525E;
+  font-family: Lato;
+  font-size: 28px;
+  text-align: center;
+}
+
 h3 {
     color: #47525E;
     font-family: Lato;
@@ -179,3 +186,7 @@ h5 {
     margin-right: 20px;
   }
   
+  .emoji {
+    font-size: 5em; /* Scale the emoji to be much larger */
+    color: #47525E;
+}
