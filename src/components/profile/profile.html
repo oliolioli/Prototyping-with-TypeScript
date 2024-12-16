@@ -1,0 +1,57 @@
+<template class="profile">
+    <require from="./profile.scss"></require>
+
+    <mdc-layout-grid>
+        <mdc-layout-grid-inner>
+
+            <mdc-layout-grid-cell span="12">
+                <h2 mdc-headline2>Profile</h2>
+            </mdc-layout-grid-cell>
+
+            <mdc-layout-grid-cell span="6">
+                <mdc-card>
+                    <h3 mdc-headline6>Information</h3>
+                    <ul class="personal-info">
+                        <li>Name: Marc</li>
+                        <li>Email: marc.liff@unifr.ch</li>
+                        <li>Phone: +41769493343</li>
+                        <li>Date of birth: 29.02.1999</li>
+                    </ul>
+                </mdc-card>
+                <mdc-card>
+                    <h3 mdc-headline6>Grades</h3>
+                    <ul class="courses-info">
+                        <li repeat.for="course of courses">
+                            ${course.course} - ${course.grade}
+                        </li>
+                        
+                    </ul>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+            <mdc-layout-grid-cell span="6">
+                <mdc-card>
+                    <h3 mdc-headline6>Notifications</h3>
+                    <div if.bind="notifications.length > 0">
+                        <ul class="notifications">
+                            <li repeat.for="notification of notifications">
+                                ${notification.message} - <small>${notification.date}</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div if.bind="notifications.length === 0">
+                        <p>No notifications</p>
+                    </div>
+                </mdc-card>
+                <mdc-card>
+                    <h3 mdc-headline6>Academic Progress</h3>
+                    <ul class="academic-progress">
+                        <li>Credits achieved: ${creditsCompleted}</li>
+                        <li>Study Year: ${studyYear}</li>
+                    </ul>
+                </mdc-card>
+            </mdc-layout-grid-cell>
+
+        </mdc-layout-grid-inner>
+    </mdc-layout-grid>
+</template>

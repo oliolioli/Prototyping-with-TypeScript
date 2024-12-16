@@ -1,5 +1,15 @@
 <template class="dashboard">
     <require from="./dashboard.scss"></require>
+
+
+    <mdc-top-app-bar>
+        <mdc-top-app-bar-row>
+            <mdc-top-app-bar-section align="end">
+                <button mdc-icon-button icon="account_circle" click.delegate="goToPage('profile')"></button>
+            </mdc-top-app-bar-section>
+        </mdc-top-app-bar-row>
+    </mdc-top-app-bar>
+
     <mdc-layout-grid mdc-body1 class="dashboard">
         <mdc-layout-grid-inner>
             <!-- Header -->
