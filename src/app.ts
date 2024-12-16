@@ -126,13 +126,23 @@ export class App {
                 title: 'scienceMedicine',
             },   
 
-            // route for social science etc.
+            // route for course enrollment
             <ICustomRouteConfig>{
                 route: 'enrollment',
                 moduleId: PLATFORM.moduleName('components/mystudies/enrolled/enrolled'),
                 nav: true,
                 name: "enrolled",
                 title: 'enrolled',
+            },    
+
+
+            // route approve room reservation
+            <ICustomRouteConfig>{
+                route: 'roomreserved',
+                moduleId: PLATFORM.moduleName('components/mystudies/roomreserved/roomreserved'),
+                nav: true,
+                name: "roomreserved",
+                title: 'roomreserved',
             },    
 
             // route for announcement
