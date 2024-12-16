@@ -1,5 +1,9 @@
 # Readme University Campus Management System
 
+## Prototype on Marvel
+
+See https://marvelapp.com/prototype/1bce0b7e/screen/96079502
+
 ## Main structure of project
 
 - **Side drawer / menu:** /src/components/app.html
@@ -13,12 +17,9 @@ Styles are to be set (centrally) under **/src/app.scss**
 
 Routes are to be found under: **/src/app.ts**
 
+## Screenshot: Main dashboard
+
 ![ucmt](https://github.com/user-attachments/assets/06772e04-d7e4-4d0d-85dd-1d5b4595751c)
-
-
-## Prototype on Marvel
-
-See https://marvelapp.com/prototype/1bce0b7e/screen/96079502
 
 
 ## Build
