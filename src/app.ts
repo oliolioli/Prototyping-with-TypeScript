@@ -7,7 +7,7 @@ import {ICustomRouteConfig} from "./models/navigation";
 export class App {
     private _router: Router;
     private _drawer: MdcDrawer;
-    private _subTitle: string = "Prototype v0.2";
+    private _subTitle: string = "Prototype v0.9";
 
     // In the following part all needed routes can be added
     configureRouter(config: RouterConfiguration, router: Router) {
