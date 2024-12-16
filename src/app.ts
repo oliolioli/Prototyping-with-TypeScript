@@ -9,6 +9,7 @@ export class App {
     private _drawer: MdcDrawer;
     private _subTitle: string = "Prototype v0.2";
 
+    // In the following part all needed routes can be added
     configureRouter(config: RouterConfiguration, router: Router) {
         router.title = "The Campus Management System";
         this._router = router;
@@ -123,7 +124,16 @@ export class App {
                 nav: true,
                 name: "scienceMedicine",
                 title: 'scienceMedicine',
-            },      
+            },   
+
+            // route for social science etc.
+            <ICustomRouteConfig>{
+                route: 'enrollment',
+                moduleId: PLATFORM.moduleName('components/mystudies/enrolled/enrolled'),
+                nav: true,
+                name: "enrolled",
+                title: 'enrolled',
+            },    
 
             // route for announcement
             <ICustomRouteConfig>{
