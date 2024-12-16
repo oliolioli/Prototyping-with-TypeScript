@@ -162,6 +162,15 @@ export class App {
                 nav: true,
                 name: "announcement",
                 title: 'Announcement',
+            },
+
+            // route for profile
+            <ICustomRouteConfig>{
+                route: 'profile',
+                moduleId: PLATFORM.moduleName('components/profile/profile'),
+                nav: true,
+                name: "profile",
+                title: 'Profile',
             }
         ]);
     }

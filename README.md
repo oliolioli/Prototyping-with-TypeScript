@@ -24,6 +24,11 @@ Routes are to be found under: **/src/app.ts**
 
 ## Build
 
+To run this application, follow the following steps:
+- clone this repository
+- run npm install
+- run npm start
+=======
 ### Development mode
 * Injects the `services/config-dev.ts` config
 * Starts hot reloading development server
@@ -39,6 +44,7 @@ Generates visualization of package sizes
 ```bash
 npm run analyze
 ```
+
 
 
 ## References
