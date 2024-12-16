@@ -145,6 +145,16 @@ export class App {
                 title: 'roomreserved',
             },    
 
+            // route approve room reservation
+            <ICustomRouteConfig>{
+                route: 'financialsupportaccepted',
+                //moduleId: PLATFORM.moduleName('components/mystudies/roomreserved/roomreserved'),
+                moduleId: PLATFORM.moduleName('components/mystudies/financialsupportaccepted/financialsupportaccepted'),
+                nav: true,
+                name: "financialsupportaccepted",
+                title: 'We received your request for financial support.',
+            },    
+
             // route for announcement
             <ICustomRouteConfig>{
                 route: 'announcement',
