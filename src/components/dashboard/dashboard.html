@@ -1,24 +1,15 @@
 <template class="dashboard">
     <require from="./dashboard.scss"></require>
 
-
-    <mdc-top-app-bar>
-        <mdc-top-app-bar-row>
-            <mdc-top-app-bar-section align="end">
-                <button mdc-icon-button icon="account_circle" click.delegate="goToPage('profile')"></button>
-            </mdc-top-app-bar-section>
-        </mdc-top-app-bar-row>
-    </mdc-top-app-bar>
-
     <mdc-layout-grid mdc-body1 class="dashboard">
         <mdc-layout-grid-inner>
             <!-- Header -->
             <mdc-layout-grid-cell span="12">
-                <h3 mdc-headline3 selector>University Campus</h3>
+                <h3 class='dashboard-title' mdc-headline3 selector>University Campus</h3>
             </mdc-layout-grid-cell>
             
             <!-- Dashboard of our Campus Management System / Main overview with cards -->
-            <!-- Card 1 -->
+            <!-- Courses -->
             <mdc-layout-grid-cell span="4">
                 <mdc-card>
                     <mdc-card-primary-action click.delegate="goToPage('mystudies')">
@@ -31,7 +22,7 @@
                 </mdc-card>
             </mdc-layout-grid-cell>
 
-            <!-- Card 2 -->
+            <!-- Rooms -->
             <mdc-layout-grid-cell span="4">
                 <mdc-card>
                     <mdc-card-primary-action click.delegate="goToPage('roomreservation')">
@@ -44,7 +35,7 @@
                 </mdc-card>
             </mdc-layout-grid-cell>
 
-            <!-- Card 3 -->
+            <!-- Mensa -->
             <mdc-layout-grid-cell span="4">
                 <mdc-card>
                     <mdc-card-primary-action click.delegate="goToPage('eat')">
@@ -57,7 +48,7 @@
                 </mdc-card>
             </mdc-layout-grid-cell>
 
-            <!-- Card 4 -->
+            <!-- Finance -->
             <mdc-layout-grid-cell span="4">
                 <mdc-card>
                     <mdc-card-primary-action click.delegate="goToPage('financialsupport')">
@@ -70,7 +61,7 @@
                 </mdc-card>
             </mdc-layout-grid-cell>
 
-            <!-- Card 5 -->
+            <!-- Statistics -->
             <mdc-layout-grid-cell span="4">
                 <mdc-card>
                     <mdc-card-primary-action click.delegate="goToPage('statistics')">
@@ -83,7 +74,7 @@
                 </mdc-card>
             </mdc-layout-grid-cell>
 
-            <!-- Card 6 -->
+            <!-- Announcement -->
             <mdc-layout-grid-cell span="4">
                 <mdc-card>
                     <mdc-card-primary-action click.delegate="goToPage('announcement')">
