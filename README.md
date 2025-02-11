@@ -28,7 +28,8 @@ To run this application, follow the following steps:
 - clone this repository
 - run npm install
 - run npm start
-=======
+  
+
 ### Development mode
 * Injects the `services/config-dev.ts` config
 * Starts hot reloading development server
